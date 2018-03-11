@@ -1,0 +1,63 @@
+.band-details {
+  width: 30%;
+  min-width: 320px;
+  height: 300px;
+  margin: 20px;
+  background-color: #e5e5e5;
+  color: black;
+  border-radius: 5px;
+
+  .top {
+    display: flex;
+    top: 15px;
+    padding: 20px;
+
+    > div {
+      width: 70%;
+    }
+
+    .fa-users {
+      padding: 20px;
+      font-size: 50px;
+      background: white;
+      color: green;
+      border-radius: 5px;
+    }
+
+    .title {
+      display: block;
+      margin: 20px;
+      text-align: center;
+      font-size: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .stars {
+      display: flex;
+      justify-content: center;
+
+      > div {
+        margin-right: 5px;
+      }
+
+      .filled {
+        color: #CCCC00;
+      }
+    }
+  }
+
+  .bottom {
+    margin: 20px;
+    height: 120px;
+    max-width: 380px;
+    border-radius: 5px;
+    background-color: white;
+     
+    .description {
+      display: block;
+      padding: 5px;
+    }
+  }
+}

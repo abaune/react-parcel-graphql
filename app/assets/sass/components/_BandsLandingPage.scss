@@ -1,0 +1,80 @@
+$header-height: 75px;
+
+.bands-landing-page {
+  display: flex;
+  flex-direction: column;
+  color: #e5e5e5;
+  height: 100%;
+  width: 100%;
+
+  button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-shadow: none;
+    text-transform: uppercase;
+    background-color: #333333;
+    color: #e5e5e5;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #404040;
+    }
+  }
+
+  .header {
+    position: relative;
+    background-color: #333333;
+    font-size: 36px;
+    height: $header-height;
+    
+    > span {
+      position: absolute;
+      bottom: 0px;
+      padding: 10px;
+    }
+  }
+
+  .row {
+    display: flex;
+    margin: 30px 25px 40px;
+    width: 93%;
+
+    span {
+      flex-grow: 1;
+      font-size: 30px;
+    }
+
+    button {
+      margin-left: 10px;
+    }
+  }
+
+  .body {
+    display: flex;
+
+    .icon {
+      position: relative;
+      margin: 10px;
+      font-size: 40px;
+      transform: translateY(50%);
+      
+      svg {
+        cursor: pointer;
+
+        &:hover {
+         color: #191970;
+        }
+      }  
+    }
+
+    .bands {
+      display: flex;
+      height: calc(100% - #{$header-height});
+      width: 100%;
+    }
+  }
+}
